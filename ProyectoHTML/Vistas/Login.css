@@ -1,0 +1,79 @@
+﻿body {
+    padding-top: 8em;
+    font-family: 'Segoe UI', Calibri, sans-serif;
+    background-color: #355C7D;
+    font-size: 18px;
+    margin: 0;
+    color: #355C7D;
+}
+
+h1 {
+    color: #6C5B7B;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.Login {
+    width: 30%;
+    margin: 30px auto;
+    padding: 32px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(53, 92, 125, 0.2);
+    border-top: 4px solid #355C7D;
+}
+
+.Usuario, .Contrasena {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #6C5B7B;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.btn {
+    background-color: #F67280;
+    color: white;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+    .btn:hover {
+        background-color: #C06C84;
+        box-shadow: 0 4px 12px rgba(192, 108, 132, 0.3);
+        transform: translateY(-2px);
+    }
+
+    .btn:active {
+        transform: translateY(0);
+    }
+
+.contra, .user {
+    padding: 12px 14px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 0.95em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .contra:focus, .user:focus {
+        outline: none;
+        border-color: #C06C84;
+        box-shadow: 0 0 0 3px rgba(192, 108, 132, 0.2);
+    }

@@ -1,0 +1,175 @@
+﻿body {
+    font-family: 'Segoe UI', Calibri, sans-serif;
+    background-color: #F8B195;
+    margin: 0;
+    padding: 0;
+    color: #355C7D;
+    min-height: 100vh;
+}
+
+.Principal {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.lateral {
+    width: 18%;
+    background-color: #355C7D;
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba(53, 92, 125, 0.3);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.top {
+    width: 82%;
+    background-color: white;
+    min-height: 70px;
+    margin-left: 18%;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(53, 92, 125, 0.1);
+    border-bottom: 3px solid #F67280;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.Grid {
+    width: 82%;
+    margin-left: 18%;
+    padding: 20px;
+    background-color: white;
+    min-height: calc(100vh - 154px);
+    height: 50vh;
+    overflow-y: auto;
+}
+
+.input-group {
+    width: calc(33.33% - 14px);
+    margin-bottom: 15px;
+}
+
+.textbox {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 0.95em;
+    color: #355C7D;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .textbox:focus {
+        outline: none;
+        border-color: #C06C84;
+        box-shadow: 0 0 0 3px rgba(192, 108, 132, 0.2);
+    }
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.TablaLink {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: left;
+}
+
+    .TablaLink:hover {
+        background-color: #C06C84;
+        color: white;
+        transform: translateX(5px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .TablaLink:active {
+        background-color: #F67280;
+        transform: translateX(0);
+    }
+
+    .TablaLink:last-of-type {
+        margin-top: 30px;
+        background-color: #F67280;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+    }
+
+        .TablaLink:last-of-type:hover {
+            background-color: #C06C84;
+            transform: translateY(-5px);
+        }
+
+.TopLink {
+    padding: 10px 20px;
+    background-color: #6C5B7B;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    width: 25%;
+    text-align: center;
+}
+
+    .TopLink:hover {
+        background-color: #F67280;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(192, 108, 132, 0.3);
+    }
+
+    .TopLink:active {
+        transform: translateY(0);
+    }
+
+.datagrid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(53, 92, 125, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .datagrid th {
+        background-color: #6C5B7B;
+        color: white;
+        text-align: left;
+        padding: 12px 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        letter-spacing: 0.5px;
+    }
+
+    .datagrid td {
+        padding: 10px 15px;
+        border-bottom: 1px solid #dee2e6;
+        color: #355C7D;
+    }
+
+    .datagrid tr:nth-child(even) {
+        background-color: rgba(248, 177, 149, 0.1);
+    }
+
+    .datagrid tr:hover {
+        background-color: rgba(192, 108, 132, 0.1);
+    }
